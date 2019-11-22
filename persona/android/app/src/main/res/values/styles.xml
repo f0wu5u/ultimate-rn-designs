@@ -1,0 +1,22 @@
+<resources>
+
+      <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#31ad61</item>
+        <item name="android:colorPrimary">#31ad61</item>
+        <item name="colorSecondary">#050505</item>
+
+        <item name="android:colorSecondary">#050505</item>
+
+        <item name="isLightTheme">false</item>
+
+        <item name="colorAccent">#31ad61</item>
+        <item name="android:colorAccent">#31ad61</item>
+
+        <item name="android:colorBackground">#050505</item>
+        <item name="android:statusBarColor">#00000000</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
+    </style>
+</resources>

@@ -1,15 +1,17 @@
 import React, { PureComponent } from 'react';
-import { Text, View, Image } from 'react-native';
-
+import { Text, View, Image, TouchableOpacity } from 'react-native';
 export default class CustomAppBar extends PureComponent {
     render() {
+        const {onLogout} = this.props;
         return (
             <View style={style.actionBarStyle}>
                 <Image style={style.imageIconsStyle} source={require('../assets/images/screen.png')} />
                 <View style={style.searchBarStyle}>
                     <Text style={style.searchBarTextStyle} children="Search" />
                 </View>
-                <Image style={style.imageIconsStyle} source={require('../assets/images/user.png')} />
+                <TouchableOpacity onPress={()=>onLogout()}  activeOpacity={0.8}>
+                    <Image style={style.imageIconsStyle} source={require('../assets/images/user.png')} />
+                </TouchableOpacity>
             </View>
         )
     }

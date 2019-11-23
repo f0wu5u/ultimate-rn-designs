@@ -3,7 +3,7 @@ import { Text, View, TouchableOpacity, TouchableNativeFeedback } from 'react-nat
 
 export default class Button extends PureComponent {
     render() {
-        const { full, light, title, style, onPress } = this.props;
+        const { full, light, title, style, onPress, disabled } = this.props;
 
         // Define button style per props
         let buttonStyle = full ? { ...mStyle.baseStyle, ...mStyle.fullStyle } : mStyle.baseStyle;
@@ -14,6 +14,7 @@ export default class Button extends PureComponent {
         return (
             <TouchableNativeFeedback
             onPress={onPress}
+            disabled={disabled || false}
             background={TouchableNativeFeedback.SelectableBackground()} >
                 <View style={[buttonStyle, style]}>
                     <Text style={textStyle} >{title}</Text>

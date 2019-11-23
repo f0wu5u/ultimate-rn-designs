@@ -3,7 +3,7 @@ import { TextInput } from 'react-native';
 
 export default class Input extends PureComponent {
     render() {
-        const { style, type, placeholder, isPassword } = this.props;
+        const { style, type, placeholder, isPassword, onChangeText } = this.props;
 
         return (
             <TextInput
@@ -18,6 +18,7 @@ export default class Input extends PureComponent {
                 placeholder={placeholder}
                 placeholderTextColor="#ffffff60"
                 underlineColorAndroid="transparent"
+                onChangeText = {onChangeText}
             />
         )
     }

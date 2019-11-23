@@ -4,7 +4,7 @@ import UpdatedShowItem from './UpdatedShowItem';
 
 export default class NewEpisodesList extends PureComponent {
     render() {
-        const {list} = this.props;
+        const { list } = this.props;
         return (
 
             <View style={style.baseViewStyle}>
@@ -24,9 +24,9 @@ export default class NewEpisodesList extends PureComponent {
 }
 
 const style = {
-    topTextStyle: { marginStart:16,marginTop:8, marginBottom: 12, fontSize: 10, color: "#ffffff70" },
+    topTextStyle: { marginStart: 16, marginTop: 8, marginBottom: 12, fontSize: 10, color: "#ffffff70" },
     baseViewStyle: {
-        paddingBottom:16,
+        paddingBottom: 16,
         backgroundColor: "#111"
     }
 }

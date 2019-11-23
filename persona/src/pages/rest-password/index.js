@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { Text, View, StatusBar, KeyboardAvoidingView } from 'react-native'
+import { Text, View } from 'react-native'
 import Button from '../../components/Button';
 import Input from '../../components/Input';
 import Anchor from '../../components/Anchor';
@@ -10,7 +10,6 @@ export default class ResetPassword extends PureComponent {
 
         return (
             <>
-                <StatusBar backgroundColor="transparent" translucent={true} />
                 <View style={style.containerStyle}>
                     <Text style={style.brandTextStyle} children="PersonaTV+" />
                     <Text style={style.shortTextStyle} children="Provide your account email to receive password reset instructions." />

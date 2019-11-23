@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
-import { Text, View, StatusBar, KeyboardAvoidingView } from 'react-native'
+import { Text, View } from 'react-native'
 import Button from '../../components/Button';
-import { StackActions, NavigationActions } from 'react-navigation';
+import { StackActions } from 'react-navigation';
 
 export default class Login extends PureComponent {
 
@@ -14,7 +14,6 @@ export default class Login extends PureComponent {
         const { goToScreen } = this;
         return (
             <>
-                <StatusBar backgroundColor="transparent" translucent={true} />
                 <View style={style.containerStyle}>
                     <Text style={style.brandTextStyle} children="PersonaTV+" />
                     <Text style={style.shortTextStyle} children="Unique TV experience on the Go!" />
